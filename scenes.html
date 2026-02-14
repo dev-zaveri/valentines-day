@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scene Select - Valentine's Day DVD</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="dvd-container scenes-page">
+        <div class="scenes-wrapper">
+            <h2 class="page-title">Scene Selection</h2>
+            
+            <div class="scenes-grid">
+                <div class="scene-item" data-scene="1">
+                    <div class="scene-thumbnail">
+                        <img src="images/scene-1.jpg" alt="Scene 1">
+                    </div>
+                </div>
+
+                <div class="scene-item" data-scene="2">
+                    <div class="scene-thumbnail">
+                        <img src="images/scene-2.jpg" alt="Scene 2">
+                    </div>
+                </div>
+
+                <div class="scene-item" data-scene="3">
+                    <div class="scene-thumbnail">
+                        <img src="images/scene-3.jpg" alt="Scene 3">
+                    </div>
+                </div>
+
+                <div class="scene-item" data-scene="4">
+                    <div class="scene-thumbnail">
+                        <img src="images/scene-4.jpg" alt="Scene 4">
+                    </div>
+                </div>
+            </div>
+
+            <button class="control-btn back-btn" id="backBtn">
+                <span>◀ Back to Menu</span>
+            </button>
+        </div>
+
+        <div class="scanlines"></div>
+        <div class="vignette"></div>
+    </div>
+
+    <audio id="bgMusic" loop crossorigin="anonymous">
+        <source src="audio/menu-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/scenes.js"></script>
+</body>
+</html>

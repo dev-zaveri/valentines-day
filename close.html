@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Error - Valentine's Day DVD</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="dvd-container error-page">
+        <div class="error-wrapper">
+            <div class="error-icon">⚠</div>
+            <h1 class="error-title glitch" data-text="DISC READ ERROR">DISC READ ERROR</h1>
+            <div class="error-message">
+                <p class="error-code">ERROR CODE: 0x4C4F5645</p>
+                <p class="error-text">The DVD player has encountered an overflowing burst of love and warmth.</p>
+            </div>
+
+            <div class="heart-container">
+                <div class="heart-animation">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path class="heart" d="M50,90 C50,90 10,65 10,40 C10,25 20,15 30,15 C40,15 50,25 50,25 C50,25 60,15 70,15 C80,15 90,25 90,40 C90,65 50,90 50,90 Z" fill="currentColor"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="final-message">
+                <p class="message-line">Happy Valentine's Day Chloe! ❤️</p>
+                <p class="message-line signature">Made with love for you babe</p>
+            </div>
+
+            <button class="control-btn restart-btn" id="restartBtn">
+                <span>↺ Return to Menu</span>
+            </button>
+        </div>
+
+        <div class="scanlines"></div>
+        <div class="vignette"></div>
+        
+        <!-- Floating Hearts -->
+        <div class="floating-hearts" id="floatingHearts"></div>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="audio/close-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/close.js"></script>
+</body>
+</html>

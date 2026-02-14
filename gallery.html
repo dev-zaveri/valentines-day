@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Valentine's Day DVD</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="dvd-container gallery-page">
+        <div class="gallery-wrapper">
+            <h2 class="page-title">Photo Gallery</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-index="0">
+                    <img src="images/photo-1.jpg" alt="Memory 1">
+                </div>
+                <div class="gallery-item" data-index="1">
+                    <img src="images/photo-2.jpg" alt="Memory 2">
+                </div>
+                <div class="gallery-item" data-index="2">
+                    <img src="images/photo-3.jpg" alt="Memory 3">
+                </div>
+                <div class="gallery-item" data-index="3">
+                    <img src="images/photo-4.jpg" alt="Memory 4">
+                </div>
+                <div class="gallery-item" data-index="4">
+                    <img src="images/photo-5.jpg" alt="Memory 5">
+                </div>
+            </div>
+
+            <button class="control-btn back-btn" id="backBtn">
+                <span>◀ Back to Menu</span>
+            </button>
+        </div>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <button class="lightbox-close" id="closeLightbox">×</button>
+            <button class="lightbox-nav prev" id="prevPhoto">‹</button>
+            <button class="lightbox-nav next" id="nextPhoto">›</button>
+            <img id="lightboxImage" src="" alt="">
+            <div class="lightbox-counter" id="photoCounter">1 / 5</div>
+        </div>
+
+        <div class="scanlines"></div>
+        <div class="vignette"></div>
+    </div>
+
+    <audio id="bgMusic" loop crossorigin="anonymous">
+        <source src="audio/menu-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing - Valentine's Day DVD</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="dvd-container play-page">
+        <div class="video-wrapper">
+            <video id="mainVideo" controls>
+                <source src="videos/valentine-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div class="video-overlay" id="videoOverlay">
+                <div class="play-icon">▶</div>
+                <p>Click to play</p>
+            </div>
+        </div>
+
+        <div class="controls-bar">
+            <button class="control-btn" id="backBtn">
+                <span>◀ Back to Menu</span>
+            </button>
+            <div class="timecode" id="timecode">00:00:00</div>
+        </div>
+
+        <div class="scanlines"></div>
+        <div class="vignette"></div>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="audio/play-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/play.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day DVD</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="dvd-container">
+        <!-- Click to Start Overlay -->
+        <div class="click-to-start" id="clickToStart">
+            <div class="click-prompt">
+                <div class="music-icon">🎵</div>
+                <h2>Click Anywhere to Start</h2>
+                <p>Experience with sound</p>
+            </div>
+        </div>
+        
+        <!-- Audio-Reactive Background Canvas -->
+        <canvas id="audioCanvas"></canvas>
+        
+        <!-- Animated Hearts Background -->
+        <div class="hearts-background" id="heartsBackground"></div>
+
+        <!-- DVD Logo Bouncing Animation -->
+        <div class="dvd-logo" id="dvdLogo">
+            <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+                <text x="50" y="35" font-family="Arial Black, sans-serif" font-size="24" text-anchor="middle" fill="currentColor">DVD</text>
+            </svg>
+        </div>
+
+        <!-- Main Menu -->
+        <div class="menu-wrapper">
+            <div class="menu-title">
+                <h1 class="glitch" data-text="Valentine's Day">Valentine's Day</h1>
+                <p class="subtitle">Special Edition</p>
+            </div>
+
+            <nav class="menu-buttons">
+                <button class="menu-btn" data-page="play" id="playBtn">
+                    <span class="btn-icon">▶</span>
+                    <span class="btn-text">Play</span>
+                </button>
+                <button class="menu-btn" data-page="scenes">
+                    <span class="btn-icon">◉</span>
+                    <span class="btn-text">Scene Select</span>
+                </button>
+                <button class="menu-btn" data-page="gallery">
+                    <span class="btn-icon">◈</span>
+                    <span class="btn-text">Photo Gallery</span>
+                </button>
+                <button class="menu-btn" data-page="close">
+                    <span class="btn-icon">⏏</span>
+                    <span class="btn-text">Eject</span>
+                </button>
+            </nav>
+
+            <div class="menu-footer">
+                <div class="footer-text">© 2025 • Special Edition • All Rights Reserved</div>
+            </div>
+        </div>
+
+        <!-- Scan Lines Effect -->
+        <div class="scanlines"></div>
+        
+        <!-- CRT Vignette -->
+        <div class="vignette"></div>
+    </div>
+
+    <!-- Audio Player (Hidden) -->
+    <audio id="bgMusic" loop crossorigin="anonymous">
+        <source src="audio/menu-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
